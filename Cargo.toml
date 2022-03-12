@@ -1,0 +1,14 @@
+[package]
+name = "u128"
+version = "0.1.0"
+description = "U128 helpers for Solana programs."
+homepage = "https://saber.so"
+repository = "https://github.com/saber-hq/u128"
+authors = ["Saber Team <team@saber.so>"]
+license = "Apache-2.0"
+edition = "2021"
+keywords = ["solana", "saber", "u128", "math"]
+
+[dependencies]
+# This must be pinned to 0.9.1 until Solana's Rust fork supports Rust >=1.56.1
+uint = { version = "=0.9.1", default-features = false }
