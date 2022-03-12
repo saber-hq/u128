@@ -9,6 +9,14 @@
 //!
 //! U128 division is [very inefficient](https://github.com/solana-labs/solana/issues/19549) on
 //! Solana BPF. This crate exposes a [U128] type derived using the [`uint`](https://crates.io/crates/uint) crate as a stopgap.
+//!
+//! # Usage
+//!
+//! Since `u128` is a built-in type in Rust, you'll need to use the fully-qualified name like so:
+//!
+//! ```rust
+//! use ::u128::mul_div_u64;
+//! ```
 #![allow(clippy::assign_op_pattern)]
 #![allow(clippy::ptr_offset_with_cast)]
 #![allow(clippy::reversed_empty_ranges)]
