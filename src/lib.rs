@@ -8,7 +8,7 @@
 //! # Motivation
 //!
 //! U128 division is [very inefficient](https://github.com/solana-labs/solana/issues/19549) on
-//! Solana BPF. This crate exposes the [uint] crate as a stopgap.
+//! Solana BPF. This crate exposes a [U128] type derived using the [`uint`](https://crates.io/crates/uint) crate as a stopgap.
 #![allow(clippy::assign_op_pattern)]
 #![allow(clippy::ptr_offset_with_cast)]
 #![allow(clippy::reversed_empty_ranges)]
