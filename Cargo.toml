@@ -11,4 +11,4 @@ keywords = ["solana", "saber", "u128", "math"]
 
 [dependencies]
 # This must be pinned to 0.9.1 until Solana's Rust fork supports Rust >=1.56.1
-uint = { version = "=0.9.1", default-features = false }
+uint = { version = "=0.9.3", default-features = false }
