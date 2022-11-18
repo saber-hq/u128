@@ -22,6 +22,6 @@ jobs:
           override: true
           profile: minimal
           toolchain: ${{ env.RUST_TOOLCHAIN }}
-      - uses: Swatinem/rust-cache@v1
+      - uses: Swatinem/rust-cache@v2
       - name: Publish crates
         run: cargo publish --token ${{ secrets.CARGO_PUBLISH_TOKEN }}
